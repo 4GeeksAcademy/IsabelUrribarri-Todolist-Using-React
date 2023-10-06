@@ -1,12 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Island+Moments&display=swap");
 
-/* 
+* {
+  font-family: sans-serif, cursive;
+  color: rgb(206, 200, 200);
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+.title {
+  font-size: 100px;
+  font-weight: 300;
+  color: rgb(225, 222, 222) !important;
+}
+
+.input {
+  border: none;
+  outline: none;
+}
+
+input::placeholder {
+  color: rgb(206, 200, 200);
+}
+
+.item-box:hover {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: white;
+}
+
+.item-box:hover button {
+  color: rgb(206, 200, 200);
+}
+
+.shadow {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.layer1 {
+  position: relative;
+  z-index: 10;
+}
+
+.invisible-layer {
+  position: relative;
+}
+
+.layer2 {
+  position: absolute;
+  bottom: -10px;
+  width: 95%;
+  height: 100px;
+  background-color: white;
+  z-index: 5;
+}
+
+.layer3 {
+  position: absolute;
+  bottom: -20px;
+  width: 90%;
+  height: 100px;
+  background-color: white;
+}
